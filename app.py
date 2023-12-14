@@ -32,7 +32,6 @@ def on_key_press(key):
             paused = True
             print("User Paused")
 
-
 # Wait for the user to input the number of clicks.
 numClicks = input("How Many Clicks You Want? ")
 
@@ -41,7 +40,6 @@ try:
 except ValueError:
     print("Please insert a valid integer for the number of clicks.")
     exit()
-
 
 posList = []
 
@@ -57,6 +55,7 @@ with keyboard.Listener(on_press=on_key_press) as listener:
 
 # Set up the keyboard listener
 with keyboard.Listener(on_press=on_key_press) as listener:
+    print("Pause clicker with pressing 'P' and abort with pressing 'ESC'")
     while clicker_running:
         if paused == False:
             for i in range(numClicks):
