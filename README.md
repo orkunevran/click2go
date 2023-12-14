@@ -1,4 +1,4 @@
-# Mouse Clicker Script
+# click2go - Mouse Clicker Script
 
 This script allows you to automate mouse clicks at specified positions on the screen.
 
